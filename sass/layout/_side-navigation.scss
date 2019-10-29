@@ -1,0 +1,67 @@
+.sidebar-wrapper {
+    background-color: $dark-gray;
+    font-family: "Roboto";
+    color: $white;
+    min-height: 100vh;
+    margin-left: -6rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+
+    .sidebar-list-group {
+        width: 6rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .sidebar-item {
+        position: relative;
+        display: block;
+        padding: 1rem 0;
+        margin-bottom: -1px;
+        background-color: $dark-gray;
+        border-top: 1px solid rgba(0,0,0,.125);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        width: 100%;
+        color: $white;
+        text-align: center;
+
+        &.active,
+        &:hover {
+            background-color: $green;
+            text-decoration: none;
+        }
+
+        &:active {
+            border: 0;
+        }
+    }
+
+    .sidebar-icon {
+        margin-bottom: 0.75rem;
+    }
+
+    .sidebar-text {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+// Display Sidebar when ".toggled"
+// Display Sidebar on Desktop
+.page-wrapper.toggled 
+.sidebar-wrapper {
+    margin-left: 0;
+
+    @media (min-width: 768px) {
+        margin-left: 0;
+    }
+}

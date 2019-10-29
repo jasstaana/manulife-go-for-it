@@ -1,0 +1,99 @@
+footer {
+    background-color: $dark-blue;
+    padding: 3.5rem 0;
+
+    .footer-title {
+        font-size: 2.55rem;
+        color: $green;
+        margin-bottom: 3rem;
+    }
+
+    .footer-links {
+        margin-top: 1.7rem;
+        margin-bottom: 3rem;
+        padding-left: 0;
+        font-family: "Roboto";
+        color: $white;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        @media (min-width: 768px) {
+            width: 75%;
+        }
+    }
+
+    .footer-links-each {
+        list-style: none;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        width: 50%;
+
+        @media (min-width: 768px) {
+            width: 25%;
+        }
+    }
+
+    .footer-links-link {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    .footer-separator {
+        height: 0.1rem;
+        margin: 2.8rem 0;
+        border-top: 1px solid rgba(0,0,0,.125);
+    }
+
+    .footer-terms {
+        padding-left: 0;
+        color: $light-gray-text;
+        margin-bottom: 3rem;
+
+        @media (min-width: 992px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .footer-terms-each {
+        display: block;
+        list-style: none;
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+
+        @media (min-width: 768px) {
+            display: inline;
+            padding: 0 10px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .footer-terms-link {
+        color: $light-gray-text;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    .footer-copy {
+        font-size: 1.2rem;
+        color: $light-gray-text;
+        text-align: center;
+
+        @media (min-width: 992px) {
+            text-align: right;
+        }
+    }
+}

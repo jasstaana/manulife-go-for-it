@@ -1,0 +1,78 @@
+.success-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 50px;
+    margin-top: 3rem;
+    padding: 50px 25px;
+    border-radius: 7px;
+    background-color: $light-green;
+    font-family: "Roboto";
+    text-align: center;
+
+    .success-content-header {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin: 3rem 0 0 0;
+        line-height: 3.36rem;
+        color: $dark-gray-text;
+    }
+
+    .success-message {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .success-separator {
+        height: 0.1rem;
+        margin: 2.8rem 0;
+        border-top: 1px solid rgba(134, 134, 134, 0.15);
+    }
+
+    .success-share-header {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        line-height: 2.88rem;
+        color: $dark-gray-text;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.success-social-icon-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 45px 0;
+
+    li {
+        display: inline-block;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $dark-gray-text;
+        margin-right: 1.5rem;
+    }
+
+    a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-decoration: none !important;
+        color: $dark-gray-text;
+    }
+
+    img {
+        margin-right: 1rem;
+        width: 3.3rem;
+    }
+}
+
+.success-back {
+    color: $orange;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}

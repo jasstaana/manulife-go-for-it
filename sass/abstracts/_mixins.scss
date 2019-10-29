@@ -1,0 +1,14 @@
+@mixin form-sub-btn {
+    border: 0;
+    color: $white;
+    padding: 1.5rem 3rem;
+    font-family: "Raleway";
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+
+    @media (min-width: 768px) {
+        padding: 1.5rem 4rem;
+    }
+}

@@ -1,0 +1,17 @@
+.form-details-btn-wrapper {
+    text-align: center;
+    margin: 5rem 0;
+
+    .form-details-btn-back,
+    .form-details-btn-submit {
+        @include form-sub-btn;
+    }
+
+    .form-details-btn-back {
+        background-color: $light-gray;
+    }
+
+    .form-details-btn-submit {
+        background-color: $orange;
+    }
+}

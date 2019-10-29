@@ -1,0 +1,19 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/reset';
+
+@import 'components/buttons';
+@import 'components/introduction-component';
+@import 'components/progress-bar-component';
+@import 'components/side-img-component';
+@import 'components/terms-conditions-components';
+
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/header';
+@import 'layout/side-navigation';
+@import 'layout/top-navigation';
+
+@import 'pages/home';
+@import 'pages/success';

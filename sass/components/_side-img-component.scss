@@ -1,0 +1,27 @@
+.side-img-wrapper {
+    display: none;
+
+    .character-one {
+        position: absolute;
+        top: 8rem;
+        right: 0;
+        width: 10rem;
+    }
+
+    .character-two {
+        position: absolute;
+        top: -5rem;
+        left: 0;
+        width: 10rem;
+    }
+
+    .character-three {
+        position: absolute;
+        width: 17.5rem;
+        top: 35rem;
+    }
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}

@@ -1,0 +1,12 @@
+.page-wrapper {
+    display: flex;
+
+    #page-content-wrapper {
+        min-width: 100vw;
+
+        @media (min-width: 768px) {
+            min-width: 0;
+            width: 100%;
+        }
+    }
+}
