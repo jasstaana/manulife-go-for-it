@@ -26,14 +26,25 @@ $(function() {
             }
         },
         submitHandler: function (form) {
-            var form = $(this);
+            var form = $("#formDetails");
+            var submitButton = $("#form-submit");
+            var mainContent = $("#mainContent");
+            var successContent = $("#successContent");
+
             $.ajax({
                 type: form.attr('method'),
                 url: form.attr('action'),
-                data: form.serialize()
-            }).done(function() {
-                $("#mainContent").remove();
-                $("#successContent").load( "form-success.html" ).hide().fadeIn("slow");
+                dataType: 'jsonp',
+                data: form.serialize(),
+                beforeSend: function() {
+                    submitButton.html('Sending....');
+                },
+                complete: function(data) {
+                    mainContent.fadeOut(5000, function() { 
+                        $(this).remove();
+                    });
+                    successContent.load("form-success.html");
+                }
             });
         }
     });
