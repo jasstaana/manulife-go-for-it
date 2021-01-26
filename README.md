@@ -1,6 +1,6 @@
 # manulife-go-for-it
 
-This repository is created for assessment with The Union by Jas Sta. Ana. This is a single page that displays a form and accepts details from the user, and then shows a success page.
+This repository is created by Jas Sta. Ana. This is a single page that displays a form and accepts details from the user, and then shows a success page.
 
 ## Start the application
 
